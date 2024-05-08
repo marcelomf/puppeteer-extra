@@ -1,8 +1,7 @@
 {
   "name": "puppeteer-extra",
-  "version": "3.3.7",
+  "version": "4",
   "description": "Teach puppeteer new tricks through plugins.",
-  "repository": "berstend/puppeteer-extra",
   "author": "berstend",
   "license": "MIT",
   "typings": "dist/index.d.ts",
