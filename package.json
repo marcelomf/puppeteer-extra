@@ -1,12 +1,11 @@
 {
   "name": "puppeteer-extra",
-  "version": "3.3.8",
+  "version": "3.3.9",
   "description": "Teach puppeteer new tricks through plugins.",
   "author": "berstend",
   "license": "MIT",
   "typings": "dist/index.d.ts",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
