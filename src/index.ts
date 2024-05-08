@@ -197,7 +197,13 @@ export class PuppeteerExtra implements VanillaPuppeteer {
     // Let's check requirements after plugin had the chance to modify the options
     this.checkPluginRequirements(opts)
 
-    const browser = await this.pptr.connect(options)
+    let browser;
+    if(options.browser) {
+      browser = options.browser;
+    } else {
+      browser = await this.pptr.connect(options);
+    }
+    
     this._patchPageCreationMethods(browser as BrowserInternals)
 
     await this.callPlugins('_bindBrowserEvents', browser, opts)
