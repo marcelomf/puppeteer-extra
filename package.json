@@ -1,6 +1,6 @@
 {
   "name": "puppeteer-extra",
-  "version": "4",
+  "version": "3.3.8",
   "description": "Teach puppeteer new tricks through plugins.",
   "author": "berstend",
   "license": "MIT",
