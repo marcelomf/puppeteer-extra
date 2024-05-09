@@ -198,12 +198,12 @@ export class PuppeteerExtra implements VanillaPuppeteer {
     this.checkPluginRequirements(opts)
 
     let browser;
-    if(options.browser) {
-      browser = options.browser;
-    } else {
-      browser = await this.pptr.connect(options);
-      this._patchPageCreationMethods(browser as BrowserInternals)
-    }
+    // if(options.browser) {
+    //   browser = options.browser;
+    // } else {
+    // }
+    browser = await this.pptr.connect(options);
+    this._patchPageCreationMethods(browser as BrowserInternals)
 
     await this.callPlugins('_bindBrowserEvents', browser, opts)
     return browser
